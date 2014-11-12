@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-regular-webfont.woff') format('woff'),
+  url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+  url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-bold-webfont.woff') format('woff'),
+       url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+       url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'open_sanslight';
+	/** agrego **/ 
+	color:black;
+}
+
+.big_black_right {
+		font-size: 38px;
+	}
+
+
+p {
+	color: black !important;
+}
+
+#logo {
+	width: 240px;
+}
+
+
+#widgets-element-socialmedia_profile-default {
+	float: right;
+}
+
+#widgets-element-socialmedia_profile-default img{
+	width: 32px;
+}
+
+.front .view-blog .blogCatInfo .itemMeta-blog span.fcicon, .jmCategoryBlogItem .blogCatInfo .itemMeta-blog span.fcicon {
+	display: none !important;
+}
+
+.ui-widget-overlay{
+	z-index: 0;
+}
+
+.main-content-main  {
+	min-height: 500px;
+}
+
+.views-table {
+		width: 100%;
+}
+
+.views-table caption {
+	text-align: left;
+}
+
+.sf-menu li ul { overflow: visible !important; }
+
+/***************** microblog **********************/
+
+.microblog-post {
+	color:black !important;
+}
+
+.microblog-date {
+	color:#6591f4;
+}
+
+
+
+

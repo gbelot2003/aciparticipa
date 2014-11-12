@@ -1,0 +1,187 @@
+/*----------------------------------------------------------------------
+# Package - JM Template
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+.styleBoxBlock ,[class^="region-sidebar-"] .styleBoxBlock , .region-sidebar-first .styleBoxBlock {
+    background: $white !important;
+    border: $borderMD !important;
+    @include box-shadow(1px 1px 1px rgba(30, 30, 30, 0.1) !important);
+    padding: $rowPadding/2 !important;
+	margin-top: $paddingBlock !important;
+}
+.style-gold {
+	h3.block-title {
+		@extend .text-center;
+		color: $white !important;
+		background: $color_main;
+		font-size: 16px !important;
+		line-height: 18px !important;
+		padding: 12px;
+	}
+}
+.style-title-bg {
+    h3.block-title {
+      background: #5B5B5B;
+      color: $white !important;
+      line-height: 15px !important;
+      font-size: 16px !important;
+      padding: 12px;
+      @extend .text-center;
+	}
+}
+.node-page h3.block-title,
+.fullTitlepage {
+	color: $color_link;
+    font-family: 'open_sansbold';
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 23px;
+    margin: 0 0 10px;
+    text-transform: uppercase; 
+}
+.region .block, [class^="region-sidebar-"] {
+	margin-top: $paddingBlock;
+}
+#section-header, #section-feature {
+	.region .block {
+		margin-top: 0px;
+	}
+}
+#section-content {
+	[class^="region-sidebar-"],[class*="region-sidebar-"], .region-sidebar-first {
+		.block {
+			h3.block-title {
+				background: #5B5B5B;
+				color: #FFFFFF;
+				font-size: 16px !important;
+				line-height: 15px;
+				padding: 12px;
+				font-family: 'open_sansbold';
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 23px;
+				margin: 0 0 10px;
+				text-transform: uppercase;
+				@extend .text-center;
+			}
+		}
+	}
+	.region-sidebar-first {
+		.block {
+			background: $white;
+			border: $borderMD;
+			@include box-shadow(1px 1px 1px rgba(30, 30, 30, 0.1));
+			padding: $rowPadding/2;
+			margin-top: $paddingBlock;
+		}
+	}
+}
+.style-img img{
+	border: 1px solid #EAEAEA;
+    display: block;
+    padding: 5px;
+}
+.grey, 
+.gold, 
+.orange,
+.green,
+.darkgreen,
+.brightred,
+.deepred,
+.blue,
+.deepblue {
+	h3.block-title {
+		color: $white !important;
+		font-size: 16px !important;
+		line-height: 15px !important;
+		padding: 12px;
+		@extend .text-center;
+	}
+	p {
+		@extend .text-left;
+	}
+	ul {
+		padding: 0 0 0 20px;
+		@extend .text-left;
+		li {
+			list-style: disc;
+		}
+	}
+}
+.grey h3.block-title {
+	background: grey !important;
+}
+.gold h3.block-title {
+	background: gold !important;
+}
+.orange h3.block-title {
+	background: orange !important;
+}
+.green h3.block-title {
+	background: green !important;
+}
+.darkgreen h3.block-title {
+	background: darkgreen !important;
+}
+.brightred h3.block-title {
+	background: #c03232 !important;
+}
+.deepred h3.block-title {
+	background: #900101 !important;
+}
+.blue h3.block-title {
+	background: blue !important;
+}
+.deepblue h3.block-title {
+	background: #0c53b5 !important;
+}
+
+#block-system-main {
+	margin: 0px;
+}
+//**** RESET INPUT ****//
+textarea, input[type="text"], 
+input[type="password"], input[type="datetime"], 
+input[type="datetime-local"], input[type="date"], 
+input[type="month"], input[type="time"], 
+input[type="week"], input[type="number"], 
+input[type="email"], input[type="url"], 
+input[type="search"], input[type="tel"], 
+input[type="color"]{
+	border: 1px solid $colorBorder;
+	@include border-radius(0px);
+	height: 30px;
+	line-height: 28px;
+	padding: 0;
+	text-indent: 10px;
+}
+textarea {
+	height: 200px;
+}
+label {
+	font-weight: normal;
+}
+input[type="checkbox"] {
+	margin: 0px;
+}
+textarea:focus, input[type="text"]:focus, 
+input[type="password"]:focus, input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, input[type="date"]:focus, 
+input[type="month"]:focus, input[type="time"]:focus, 
+input[type="week"]:focus, input[type="number"]:focus, 
+input[type="email"]:focus, input[type="url"]:focus, 
+input[type="search"]:focus, input[type="tel"]:focus, 
+input[type="color"]:focus, .uneditable-input:focus,
+input:focus:invalid:focus, 
+textarea:focus:invalid:focus, 
+select:focus:invalid:focus {
+	border: 1px solid $color_main;
+}
+.remove-style-box {
+	background: none !important;
+    border: none !important;
+    @include box-shadow(none !important);
+}

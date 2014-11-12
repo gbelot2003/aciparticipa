@@ -1,0 +1,62 @@
+/* Custom style declarations without the LESS CSS preprocessor. To use,  rename this file to app-style.css.*/
+
+#secondary-menu-list a {
+	color:rgb(223, 80, 30);
+} 
+
+#secondary-menu-list a:hover,#secondary-menu-list .active  {
+	color:rgb(255, 255, 255);
+} 
+
+
+@media (max-width: 1952px){
+
+	.views-responsive-grid .views-column-1{
+		width: 50%;
+		float: left;
+	}
+
+	.views-responsive-grid .views-column-2{
+		width: 50%;
+		float: right;
+	}
+}
+
+@media (max-width: 470px){
+
+	.panels-flexible-column-comunicados-noticias-1{
+		display: none;
+	}
+}
+
+@media (max-width: 640px){
+
+	#mini-panel-noticias_y_comunicados .panel-panel{
+		float: none;
+		width: 100%;
+	}
+
+	.views-responsive-grid .views-column-1{
+		width: 100%;
+		float: none;
+	}
+
+	.views-responsive-grid .views-column-2{
+		width: 100%;
+		float: none;
+	}
+
+	#programas-proyectos .panel-panel {
+		float: none;
+		width: 100%;
+	}
+
+	.panels-flexible-column {
+		float: none;
+		width: 100%;
+	}
+}
+
+.colorbox img {
+	margin: 0 0.5em 1em 0;
+}

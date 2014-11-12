@@ -1,0 +1,1 @@
+<div class="col-md-@colsize superhero-gallery-item isotope-item <?php print $tag;?>"><a href="<?php print $image;?>" rel="lightbox"><img src="<?php print $image;?>"/></a></div>

@@ -1,0 +1,330 @@
+/*----------------------------------------------------------------------
+# Package - JM Template
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+
+/**
+ * Helix Framework Credit
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2001 - 2013 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+ */
+
+body {
+	.row {
+		margin-left: -15px;
+	}
+	#section-feature .row {
+		margin: 0px;
+		.region {
+			padding: 0px;
+		}
+	}
+	@media (min-width: 1200px) {
+		.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+		  width: 980px;
+		}
+	}
+
+	@media (max-width: 992px) {
+		.superhero-mobile-menu-toggle {
+			position: absolute;
+			right: 5px;
+			top: -58px;
+		}
+		#section-header {
+			.container {
+				width: auto;
+			}
+			.site-logo {
+				padding: 5px 0;
+				@extend .text-left;
+				a {
+					display: block;
+					line-height: 60px;
+				}
+			}
+			.region-menu  {
+				width: 100%;
+			}
+		}
+		.superhero-dropdown {
+			margin: 0px !important;
+			> ul.menu > li {
+				float: inherit !important;
+			}
+		}
+		#section-footer {
+			p {
+				text-align: center !important;
+			}
+		}
+		// Blog
+		.view-blog, .jmCategoryBlogItem {
+			.blogCatInfo, .blogCatContent {
+				width: 100%;
+				.itemMeta-blog, .itemImg-blog  {
+					width: 100%;
+					margin-bottom: $rowPadding;
+				}
+				.itemBody-blog {
+					padding: 0;
+				}
+			}
+		}
+	}
+	@media (max-width: 991px) {
+		.superhero-mobile-menu-toggle {
+			position: absolute;
+			right: 5px;
+			top: -58px;
+		}
+		&.home-creative2 #section-postcontent {
+			.prefix {
+				padding: 0 25px 0 70px;
+			}
+			#block-newsletter-newsletter-subscribe {
+				padding: 30px 0;
+				.form-item-email {
+					width: 330px;
+					.#edit-email {
+						width: 100%;
+					}
+				}
+			}
+		}
+		#section-footer {
+			.mail-support {
+				.content p {
+					text-align: center !important;
+				}
+			}
+		}
+	}
+	@media (min-width: 769px) and (max-width: 992px) {
+		.webform-client-form #webform-component-name {
+			float: inherit;
+			margin: 0;
+			width: 100%;
+		}
+	}
+	@media (max-width: 768px) {
+		#section-bottom2 .region .block {
+			padding: 20px 0px;
+		}
+		.webform-client-form  {
+			#webform-component-name {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			#edit-submitted-name, #edit-submitted-email {
+				width: 150px;
+			}
+		}
+		.sh-testimonial {
+			.bx-viewport {
+				height: auto;
+			}
+			.views-field-field-image {
+				float: left;
+				width: 40%;
+			}
+			.views-field-field-job-title {
+				float: left;
+				width: 60%;
+			}
+		}
+	}
+	@media (min-width: 768px) {
+		&.rtl {
+			.col-md-1, 
+			.col-md-2, 
+			.col-md-3, 
+			.col-md-4, 
+			.col-md-5, 
+			.col-md-6, 
+			.col-md-7, 
+			.col-md-8, 
+			.col-md-9, 
+			.col-md-10, 
+			.col-md-11, 
+			.col-md-12 {
+				float: right;
+			}
+		}
+	}
+	
+	@media (max-width: 767px) {
+		#section-footer {
+			p {
+				text-align: center !important;
+			}
+		}
+		.portfolio-text {
+			padding-top: $rowPadding;
+		}
+		.region-content-top-2 {
+			width: 100%;
+		}
+		&.rtl {
+			.col-md-1, 
+			.col-md-2, 
+			.col-md-3, 
+			.col-md-4, 
+			.col-md-5, 
+			.col-md-6, 
+			.col-md-7, 
+			.col-md-8, 
+			.col-md-9, 
+			.col-md-10, 
+			.col-md-11, 
+			.col-md-12 {
+				float: inherit;
+			}
+		}
+		&.rtl {
+			#section-header{
+				.col-md-1, 
+				.col-md-2, 
+				.col-md-3, 
+				.col-md-4, 
+				.col-md-5, 
+				.col-md-6, 
+				.col-md-7, 
+				.col-md-8, 
+				.col-md-9, 
+				.col-md-10, 
+				.col-md-11, 
+				.col-md-12 {
+					float: right;
+				}
+			}
+		}
+		&.home-creative2 {
+			#section-user {
+				.region .block {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+	
+	@media (max-width: 640px) {
+		.jmCategoryBlogItem {
+			a.readMore {
+				display: block;
+				margin-bottom: 10px !important;
+			}
+		}
+		.view-blog-categories .views-row {
+			padding: 0px;
+		}
+		&.home-creative2 #section-postcontent {
+			.prefix {
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+			}
+			#newsletter-subscribe-form #edit-email {
+				margin: 10px 0px 15px 0;
+				max-width: 100%;
+			}
+		}
+	}
+	@media (max-width: 639px) {
+		#section-content .view-blog-categories .views-row,
+		.node-article-details .itemViewMeta,
+		.node-article-details .itemViewContent {
+			width: 100%;
+		}
+		.node-article {
+			padding: 0px;
+		}
+		.node-article-details .itemViewContent {
+			padding: 0;
+			margin-top: 20px;
+		}
+		.view-display-id-page_1 {
+			.views-row {
+				margin-bottom: 20px;
+			}
+		}
+		.node-article-details {
+			padding-top: $rowPadding;
+		}
+	}
+	@media (max-width: 480px) {
+		#contact-site-form {
+			input[type="text"] {
+				width: 100%;
+			}
+		}
+		.view-team.view-display-id-block_3 .views-row {
+			width: 100%;
+		}
+		.viewTeam {
+			padding: $rowPadding 0px;
+		}
+		.node-article-details {
+			h2.TitleCatItem {
+				width: 100%;
+			}
+			span.itemViewDate {
+				margin-bottom: $mainPadding/2;
+			}
+		}
+		.webform-client-form {
+			#webform-component-name {
+				width: 100%;
+				margin-bottom: 12px;
+				#edit-submitted-name {
+					max-width: 200px;
+					width: 200px;
+				}
+			}
+			#webform-component-email #edit-submitted-email {
+				max-width: 200px;
+				width: 200px;
+			}
+		}
+		.superhero-portfolio #filters li {
+			margin-bottom: 10px;
+		}
+	}
+	@media (min-width: 360px) and (max-width: 640px) {
+		#jm-pricingTables .jm-pricingItem {
+			width: 50%;
+			margin: 20px 0;
+		}
+	}
+	@media (max-width: 360px) {
+		.node-article-details span.itemViewDate {
+			margin-bottom: 15px;
+		}	
+		.view-team .bx-wrapper .bx-viewport {
+			margin: 20px 35px;
+		}
+		#jm-pricingTables .jm-pricingItem {
+			width: 100%;
+			margin: 20px 0;
+		}
+		&.home-creative2 #section-postcontent {
+			#newsletter-subscribe-form {
+				width: 100%;
+			}
+			#block-newsletter-newsletter-subscribe .form-item-email {
+				width: 100%;
+			}
+			.prefix {
+				height: inherit;
+				line-height: inherit;
+			}
+		}
+	}
+}
+
+
+    

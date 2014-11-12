@@ -1,0 +1,210 @@
+/*----------------------------------------------------------------------
+# Package - JM Template
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+
+.rtl {
+	direction: rtl;
+	.text-left {
+		text-align: left !important;
+	}
+	.text-right {
+		text-align: right !important;
+	}
+	.left {
+		float: left !important;
+	}
+	.right {
+		float: right !important;
+	}
+	//*** Style Header ***//
+	
+	//*** End Style Header ***//
+	
+	/** Block Check List **/
+	.check-list ul li:before {
+		@extend .right;
+		content:  "\f053";
+		padding-left: $mainPadding/2;
+	}
+	// Menu Top
+	.menuTop ul.menu li:first-child {
+		a:before {
+			content: "";
+			padding: 0px;
+			margin: 0px;
+		}
+		a {
+			padding: 0px;
+			&:after {
+				content: "\f015";
+				font-family: FontAwesome;
+				font-size: 14px;
+				padding: 4px 6px;
+				color: $white;
+				background: $color_main;
+				margin-left: 7px;
+			}
+		}
+	}
+	// Breadcrumb
+	.breadcrumb {
+		overflow: hidden;
+		a { 
+			@extend .right;
+			padding-left: 8px;
+			&:first-child:before {
+				content: "";
+			}
+			&:first-child:after {
+				content:  "\f015";
+				font-family: FontAwesome;
+				font-size: 18px;
+				padding-left: 5px;
+				color: #ccc;
+			}
+		}
+	}
+	
+	// Latest News
+	.view-latest-news {
+		direction: ltr;
+		.slide {
+			h2.TitleCatItem, .field-name-body, .read-more {
+				text-align: right !important;
+			}
+		}
+	}
+	.icon-latest-news-title {
+		h3.block-title {
+			padding: 5px 45px 5px 0px;
+			background: url("../images/bg_title1.gif") no-repeat right center rgba(0, 0, 0, 0);
+		}
+	}
+	.section-postcontent .jm-last-news > h3.block-title, 
+	.section-postcontent .jm-last-news .block-contents > h3.block-title {
+		background: url("../images/bg_title1.gif") no-repeat right center rgba(0, 0, 0, 0);
+		padding: 5px 45px;
+	}
+	#section-team .meet-the-team > h3.title-block,
+	#section-team .meet-the-team h3.block-title {
+		 background: url("../images/bg_title2.gif") no-repeat right center rgba(0, 0, 0, 0);
+		padding: 5px 55px;
+	}
+	// View Team
+	.view-team {
+		direction: ltr;
+	}
+	
+	//*** FOOTER ***//
+	#section-footer {
+		.region-footer-second {
+			a {
+				padding: 0px;
+				&:before {
+					padding: 0 0 0 8px;
+				}
+			}
+			p {
+				text-align: left !important;
+			}
+		}
+	}
+	.webform-client-form strong {
+		padding-left: 5px;
+		float: right;
+	}
+	#webform-component-description {
+		overflow: hidden;
+	}
+	// Page Blog 
+	.view-blog, .jmCategoryBlogItem {
+		.blogCatInfo .itemMeta-blog {
+			span.itemCatAuthor { 
+				background: url("../images/bg_icon_user.png") no-repeat right 11px rgba(0, 0, 0, 0);
+				padding: 5px 25px 5px 0;
+			}
+			span.itemCatIn {
+				background: url("../images/bg_icon_cat.png") no-repeat right center rgba(0, 0, 0, 0);
+				padding: 5px 25px 5px 0;
+				b {
+					float: right !important;
+					padding: 0 0 0 5px;
+				}
+			}
+		}
+	}
+	.jmCategoryBlogItem {
+		.article-info {
+			.itemCatDate, .itemCatAuthor {
+				i {
+					padding-left: 8px;
+				}
+			}
+			span.itemCategory {
+				background: url("../images/bg_icon_cat.png") no-repeat right center rgba(0, 0, 0, 0);
+				padding: 0 20px 0 0;
+			}
+		}
+	}
+	// Block Right Category
+	[class^="region-sidebar-"], [class*="region-sidebar-"] {
+		.view-blog-categories .views-row a {
+			margin: 0 25px 5px 0px;
+			&:before {
+				@extend .right;
+				content:  "\f053";
+				padding: 0 0 0 15px;
+			}
+		}
+	}
+	// Portfolio 
+	.portfolio-text .field-label:before {
+		float: right;
+		padding: 0 0 0 10px;
+	}
+	// Page Shortcode
+	.close {
+		@extend .left;
+	}
+	#mycarousel {
+		.carousel-caption {
+			right: 0;
+		}
+		a.left {
+			left: 10px;
+		}
+		a.right {
+			right: 10px;
+		}
+	}
+	.shortcode-icon {
+		ul li i span {
+			@extend .left;
+			padding-right: 10px;
+		}
+	}
+	// Social Top
+	.body-innerwrapper #section-top-panel .container {
+		.region-toppanel-third , .region-toppanel-second{
+			  float: left !important;
+			  
+		}
+		.region-toppanel-third {
+			padding: 0px 0px 0 15px;
+		}
+	}
+	.socialTop li {
+		margin: 0 10px 0 0;
+	}
+	#section-top-panel #search-block-form {
+		float: left;
+		margin-left: 10px;
+	}
+	#admin-menu {
+		direction: ltr;
+	}
+}

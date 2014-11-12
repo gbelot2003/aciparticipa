@@ -1,0 +1,176 @@
+/*----------------------------------------------------------------------
+# Package - JM Template
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+.portfolio-filters {
+	#filters {
+		padding: 0px;
+		li {
+			a {
+				/*@include gradient-vertical($primaryColor, $secondaryColor);
+				border: 1px solid #BDBDBD;
+				border-radius: 3px;
+				color: #FFFFFF;
+				cursor: pointer;
+				display: inline-block;
+				font-family: 'open_sansbold';
+				margin: 0 3px !important;
+				padding: 1px 10px !important;
+				color: $black;*/
+				&.active, &:hover {
+					//@include gradient-vertical($primaryColorButton, $secondaryColorButton);
+					//border: 1px solid $color_main;
+					background: lighten($color_main, 10%);
+					color: $linkColorHover;
+				}
+				color: $white;
+				display: inline-block;
+				font-family: 'open_sansbold';
+				font-size: 15px;
+				height: 42px;
+				line-height: 42px;
+				margin: 0;
+				padding: 0px 20px;
+				@include border-radius(0px);
+				@include text-shadow(none);
+				border: none;
+				text-transform: uppercase;
+				background: $color_main;
+				outline: none;
+			}
+		}
+	}
+}
+.portfolio-container {
+	padding: 20px 0px;
+	.portfolio-item {
+		padding: 5px;
+		border: 1px solid $colorBorder;
+	}
+}
+.itemImg {
+	margin-bottom: $rowPadding;
+}
+
+.superhero-portfolio .element {
+    margin-bottom: 30px;
+}
+
+.portfolio-text {
+	h4 {
+		color: #333333;
+		font-size: 16px;
+		font-weight: normal;
+		font-family: $sansFontFamily;
+		margin-top: 0;
+		text-transform: uppercase;
+		&:nth-child(2) {
+			margin-top: 25px;
+		}
+	}
+	
+	.field-label {
+		color: #333333;
+		font-weight: normal;
+		&:before {
+			color: $color_main;
+			content: "\f046";
+			font-family: FontAwesome;
+			font-size: 13px;
+			padding-right: 10px;
+		}
+	}
+	.field-item {
+		padding-left: 22px;
+	}
+	.field-name-body {
+		.field-item {
+			padding: 0px;
+		}
+	}
+	.field-name-body + h4 {
+		margin-top: 25px;
+	}
+}
+.jm-portfolio {
+	//padding: 4px !important;
+	//border: $borderMD;
+	.jm-portfolio-item {
+		position: relative;
+		&:hover {
+			//@include box-shadow(0px -1px 0px $color_main inset);
+		}
+	}
+	.jm-portfolio-img {
+		position: relative; 
+		.jm-portfolio-readmore {
+			@include transition(all 300ms ease 0s);
+			background: none;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			.readMore {
+				border-radius: 50px;
+				background: $white;
+				font-size: 14px;
+				font-weight: normal;
+				height: 40px;
+				left: 50%;
+				line-height: 40px;
+				margin: -20px 0 0 -20px;
+				opacity: 0;
+				position: absolute;
+				text-align: center;
+				top: 50%;
+				width: 40px;
+				z-index: 500;
+				font-size: 0;
+				@include rotate(-90deg);
+				@include transition(all 300ms ease 0s);
+				&:before {
+					content: "\f064";
+					font-family: FontAwesome;
+					color: $color_main;
+					font-size: 18px;
+				}
+			}
+		}
+		&:hover {
+			.jm-portfolio-readmore {
+				background: fade_out($color_main, 30%);
+				.readMore {
+					height: 60px;
+					width: 60px;
+					margin: -30px 0 0 -30px;
+					line-height: 60px;
+					@include rotate(0deg);
+					opacity: 1;
+					&:before {
+						font-size: 22px !important;
+					}
+				}
+			}
+		}
+	}
+	.jm-portfolio-caption {
+		.jm-portfolio-title {
+			display: block;
+			margin: 10px 0 2px;
+			display: block;
+			text-align: center;
+			a {
+				color: #000000;
+				font-family: open_sansregular;
+				font-size: 16px;
+				font-weight: normal;
+			}
+		}
+	}
+}

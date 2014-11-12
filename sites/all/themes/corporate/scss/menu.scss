@@ -1,0 +1,194 @@
+/*----------------------------------------------------------------------
+# Package - JM Template 
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+/* Menu */
+
+
+.superhero-mobile-menu-toggle {
+	background: $black;
+	border: none;
+    color: $white;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    margin: 5px 10px;
+    padding: 8px;
+    text-align: center;
+    width: 52px;
+	&:before {
+		content: "\f039";
+		font-family: FontAwesome;
+		font-size: 22px;
+		color: $white;
+	}
+	&:hover {
+		background: $black;
+		color: $white;
+	}
+}
+@media (min-width: 993px) {
+	.superhero-mobile-menu-toggle {
+		display: none;
+	}
+	#section-header {
+		.site-logo {
+			line-height: 96px;
+			padding: 0;
+			@include transition($runTransition);
+		}
+		.superhero-dropdown {
+			float: right;
+			margin: 0px;
+		  > ul.menu {
+			> li {
+			  border-left: $borderMenu;
+			  display: block;
+			  @extend .left;
+			  margin: 0;
+			  padding: 0;
+			  position: relative;
+			  @include transition(all 200ms ease 0s);
+			  &.last {
+				border-right: $borderMenu;
+			  }
+			  &:hover {
+				background: #eeeeee;
+			  }
+			  &.expanded {
+				> a {
+				  &:after {
+					content: "\f0d7";
+					color: $color_link;
+					font-family: FontAwesome;
+					font-size: 10px;
+					margin-left: 5px;
+				  }
+				  &.active {
+					background: #eeeeee;
+				  }
+				}
+				ul.menu {
+					li.expanded {
+						
+					}
+				}
+			  }
+			  > a {
+				color: $black;
+				display: block;
+				font-size: 14px;
+				margin: 0;
+				padding: 0px 15px;
+				line-height: 80px;
+				@include transition($runTransition);
+				&.active {
+					background: #eeeeee;
+				}
+			  }
+			  &.first {
+				a.active {
+					background: none;
+				}
+			  }
+			  ul.menu {
+				li {
+				  padding: 0px;
+				  a {
+					padding: 10px;
+					line-height: normal;
+					color: $colorMenu;
+					&.active {
+						background: #f5f5f5;
+					}
+				  }
+				  &.expanded {
+					> a:after {
+						content:  "\f0da";
+						font-family: FontAwesome;
+						font-size: 10px;
+						color: $color_link;
+						@extend .right;
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		}
+		&.fixed {
+			.site-logo {
+				line-height: 72px;
+			}
+			.superhero-dropdown {
+			  > ul.menu {
+					> li {
+						> a {
+							line-height: 72px;
+						}
+					}
+				}
+			}
+		}
+	}
+	// RTL
+	body.rtl {
+		#section-header .superhero-dropdown {
+			float: left;
+			> ul.menu > li {
+				float: right !important;
+				&.expanded > a:after {
+					float: left;
+					margin: 0 5px 0 0;
+				}
+				&.first {
+					border-right: $borderMenu;
+				}
+				&.last {
+					border-right: none;
+				}
+				ul.menu li.expanded > {
+					a:before {
+						float: left;
+						content: "\f0d9";
+						font-family: FontAwesome;
+						color: $color_main;
+					}
+					a:after {
+						content: "";
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	.superhero-mobile-menu-toggle {
+		display: block;
+		i {
+			display: none;
+		}
+	}
+	.rtl {
+		#section-header .superhero-mobile-menu-toggle {
+			right: inherit;
+			left: 0;
+			display: block;
+		}
+		#section-header .superhero-dropdown > ul.menu > li {
+			width: 100%;
+			.menu-arrow {
+				top: 0;
+				right: inherit;
+				left: 0;
+			}
+			.fa-angle-right:before {
+				content:  "\f104";
+				font-family: FontAwesome;
+			}
+		}
+	}
+}

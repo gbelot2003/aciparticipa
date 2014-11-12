@@ -1,0 +1,97 @@
+/* Listado de estilos personalizados */
+@import url('fonts.css');
+/**** Fonts ****/
+
+
+body {
+
+}
+
+a {
+	color: rgb(254,100,46);
+}
+
+a:hover {
+	color: #8E2501;
+}
+
+a:visited {
+	color: #D7822B;
+}
+
+.breadcrumbs {
+	background-color: transparent;
+} 
+
+.breadcrumbs a {
+	color: rgb(254,100,46);
+}
+
+.top-bar {
+	font-family: 'josefin_sansthin', Helvetica, Arial, sans-serif;
+	background-color: transparent;
+}
+
+.contain-to-grid {
+	background: black;
+}
+
+
+.sticky {
+
+}
+
+.top-bar h1 {
+	height: 45px;
+	overflow: hidden;
+}
+
+.top-bar .name h1 a  {
+	background: url("../images/aci-toolbar2_n.png") no-repeat top left;
+	height: 1%;
+	padding-top: 45px;
+	display: block;
+	width: 164px;
+	margin-right: 25px;
+	overflow: hidden !important;
+}
+
+.top-bar .name h1 a:hover {
+	background: url("../images/aci-toolbar2_n.png") no-repeat top right;
+}
+
+.top-bar-section {
+	text-transform: uppercase;
+}
+
+.top-bar-section .main-nav {	
+	background-color: transparent
+}
+
+.top-bar-section .main-nav li a {
+	color:#f4e9e9;
+	background-color: transparent;
+	font-size: 0.6em;
+	-webkit-transition: all 0.7s ease-in-out;
+  	-moz-transition: all 0.7s ease-in-out;
+  	-o-transition: all 0.7s ease-in-out;
+  	transition: all 0.7s ease-in-out;
+}
+
+.top-bar-section .main-nav li a:hover, .top-bar-section .main-nav li a.active  {
+	color: white;
+	background: rgb(241, 107, 17);
+} 
+
+
+.title, h1, h2, h3, h4, h5, h6 {
+	color: rgb(254,100,46) !important;
+  	font-family: 'josefin_sansthin', Helvetica, Arial, sans-serif;
+}
+
+
+.body p, .body li  {
+	text-align: justify;
+  	font-family: 'josefin_sansregular', Helvetica, Arial, sans-serif;
+	color: #838383;
+}
